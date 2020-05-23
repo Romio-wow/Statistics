@@ -11,12 +11,10 @@ public class StatsService {
         return sum;
     }
 
-
     public long average(long[] purchases) {
         long sum = sum(purchases);
         return sum / purchases.length;
     }
-
 
     public long findMonthWithMax(long[] purchases) {
         long max = findMax(purchases);
@@ -33,7 +31,6 @@ public class StatsService {
 
         return numberOfMonthWithMax;
     }
-
 
     public long findMax(long[] purchases) {
         long max = purchases[0];
@@ -63,7 +60,6 @@ public class StatsService {
 
     }
 
-
     public long findMonthWithMin(long[] purchases) {
         long min = findMin(purchases);
         int numberOfMonth = 0;
@@ -80,7 +76,6 @@ public class StatsService {
         return numberOfMonthWithMin;
     }
 
-
     public long monthsLessThenAverageCount(long[] purchases) {
         long average = average(purchases);
         int count = 0;
@@ -93,7 +88,6 @@ public class StatsService {
         return count;
 
     }
-
 
     public long monthsMoreThenAverageCount(long[] purchases) {
         long average = average(purchases);
